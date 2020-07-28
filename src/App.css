@@ -1,0 +1,44 @@
+.app-wrapper {
+	display: grid;
+	width: 1200px;
+	margin: 0 auto;
+	padding: 0;
+
+	grid-template-areas: 
+		"head head head"
+		"nav cont cont"
+		"foot foot foot";
+	grid-template-rows: 60px 1fr;
+	grid-template-columns: 2fr 10fr;
+	grid-gap: 10px;
+}
+
+ul, li {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+
+img {
+	width: 100%;
+}
+
+.header {
+	grid-area: head;
+}
+
+.header img {
+	width: 20px;
+}
+
+.nav {
+	grid-area: nav;
+}
+
+.content {
+	grid-area: cont;
+}
+
+.footer {
+	grid-area: foot;
+}
